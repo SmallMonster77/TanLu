@@ -1,0 +1,28 @@
+//
+//  兼饼.pch
+//  兼饼
+//
+//  Created by 键盘上的舞者 on 15/10/9.
+//  Copyright © 2015年 键盘上的舞者. All rights reserved.
+//
+
+#ifndef ___pch
+#define ___pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+
+
+// RGB颜色
+#define HWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define HWRandomColor HWColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+#endif /* ___pch */
